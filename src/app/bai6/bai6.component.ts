@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Bai6Component implements OnInit {
 
-  arrNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+  arrNum = [-1, 2, 3, 4, 5, 6, 7, 8, 9, -10, -11, -12, -13, -14, -15];
   S = 0;
   constructor() { }
 
@@ -15,6 +15,7 @@ export class Bai6Component implements OnInit {
     this.arrNum.map(x => {
       this.S += x > 0 ? x : 0;
     });
+    console.log(this.S);
   }
 
 }
